@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="utf8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title #{page.title}
+    meta(name="description", content=page.description)
+    link(rel="stylesheet", href="https://unpkg.com/prismjs@1.6.0/themes/prism.css")
+    style
+      include ../css/main.css
+  body
+    section.banner
+      .container
+        .box
+          h1.site-title !{page.title}
+          h2.site-description !{page.description}
+          .site-meta !{page.meta}
+    section.main
+      .container
+        .page-content.markdown-body !{page.content}
+
