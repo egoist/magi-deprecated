@@ -1,6 +1,6 @@
-import magi from '../src'
+import magi from '../src/lib'
 
 test('main', async () => {
-  const result = await magi('# hello \n !')
-  console.log(result)
+  const result = await magi('# hello \n ## h2!')
+  expect(result.title).toBe('hello')
 })

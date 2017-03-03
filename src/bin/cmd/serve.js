@@ -1,5 +1,5 @@
 import express from 'express'
-import render from '../../lib/render' // eslint-disable-line import/no-unresolved
+import render from '../../lib/render'
 
 export const command = ['serve [file]', '* [file]']
 

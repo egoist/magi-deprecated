@@ -15,20 +15,20 @@ const babelOptions = {
 }
 
 task('js', () => {
-  input('src/**/*.js')
+  input('src/lib/**/*.js')
     .pipe(babel(babelOptions))
     .pipe(output('./dist/lib'))
 })
 
 task('bin', () => {
-  input('bin/**/*.js')
+  input('src/bin/**/*.js')
     .pipe(babel(babelOptions))
     .pipe(chmod(0o755))
     .pipe(output('./dist/bin'))
 })
 
 task('css', () => {
-  input('static/css/*.css')
+  input('src/static/css/*.css')
     .pipe(postcss([
       require('autoprefixer')({ browsers: ['ie > 8'] }),
       require('postcss-smart-import')(),
@@ -38,15 +38,15 @@ task('css', () => {
 })
 
 task('copy', () => {
-  input('static/template/*.pug')
+  input('src/static/template/*.pug')
     .pipe(output('dist/template'))
 })
 
 task('watch', () => {
-  watch('src/**/*.js', ['js'])
-  watch('bin/**/*.js', ['bin'])
-  watch('static/css/*.css', ['css'])
-  watch('static/template/*.pug', ['copy'])
+  watch('src/lib/**/*.js', ['js'])
+  watch('src/bin/**/*.js', ['bin'])
+  watch('src/static/css/*.css', ['css'])
+  watch('src/static/template/*.pug', ['copy'])
 })
 
 task('build', ['js', 'bin', 'css', 'copy'])
