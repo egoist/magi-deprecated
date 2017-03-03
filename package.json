@@ -16,7 +16,8 @@
     "test": "jest && npm run lint && npm run build",
     "lint": "xo",
     "build": "gulp build",
-    "dev": "gulp"
+    "dev": "gulp",
+    "docs": "node ./dist/bin/magi.js build --out docs/index.html"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
