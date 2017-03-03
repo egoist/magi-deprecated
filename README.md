@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/magi.svg?style=flat-square)](https://npmjs.com/package/magi) [![NPM downloads](https://img.shields.io/npm/dm/magi.svg?style=flat-square)](https://npmjs.com/package/magi) [![Build Status](https://img.shields.io/circleci/project/egoist/magi/master.svg?style=flat-square)](https://circleci.com/gh/egoist/magi) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat-square)](https://github.com/egoist/donate)
 
-> Single Markdown Website done right.
+> The simplest way to build website for your OSS project.
 
 ## Install
 
@@ -36,7 +36,9 @@ Run `magi` in your terminal, open browser and you'll see:
 
 `# h1` is used as site name, `blockquote` after that will be used as site description, and all other stuffs between `h1` and `h2` will be put in the banner.
 
-Here's another using [developit/unfetch](https://ooo.0o0.ooo/2017/03/03/58b98d446a40d.png) as example.
+Here's another using [developit/unfetch](https://github.com/developit/unfetch) as example:
+
+![p](https://ooo.0o0.ooo/2017/03/03/58b98d446a40d.png)
 
 ## CLI
 
