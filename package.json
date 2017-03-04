@@ -1,6 +1,6 @@
 {
   "name": "magi",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Magically turn markdown file into static website.",
   "repository": {
     "url": "egoist/magi",
