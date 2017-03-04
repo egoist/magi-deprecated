@@ -42,7 +42,7 @@ Run `magi` in your terminal, open browser and you'll see:
 
 Here's another using [developit/unfetch](https://github.com/developit/unfetch) as example:
 
-![p](https://ooo.0o0.ooo/2017/03/03/58b98d446a40d.png)
+![p](https://ooo.0o0.ooo/2017/03/03/58b98d446a40d.png?v=2)
 
 ## Recipes
 
