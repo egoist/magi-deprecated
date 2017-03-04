@@ -8,6 +8,9 @@ html
     link(rel="stylesheet", href="https://unpkg.com/prismjs@1.6.0/themes/prism.css")
     style
       include ../css/main.css
+    if (page.styles)
+      each style in page.styles
+        link(rel="stylesheet", href=style)
   body
     if page.github
       include ./github.pug
@@ -20,4 +23,6 @@ html
     section.main
       .container
         .page-content.markdown-body !{page.content}
-
+    if (page.scripts)
+      each script in page.scripts
+        script(src=script)
