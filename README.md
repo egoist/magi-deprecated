@@ -58,7 +58,7 @@ github: owner/repo
 
 Notice that it should start with `@magi` so that we know we need to parse it, the rest part of it is simple [front-matter syntax used in Jekyll](https://jekyllrb.com/docs/frontmatter/).
 
-### External stypes and scripts
+### External styles and scripts
 
 To insert `style` and `script` tag with external resource:
 
