@@ -6,11 +6,13 @@ import findAllBetween from 'unist-util-find-all-between'
 import remove from 'unist-util-remove'
 import html from 'remark-html'
 import slug from 'remark-slug'
+import htmlMatter from 'html-matter'
 import highlight from './highlight'
 import codeHandler from './handlers/code'
 
 function nodeToHtml(node) {
-  return toHTML(toHAST(node))
+  const hast = toHAST(node)
+  return hast ? toHTML(hast) : ''
 }
 
 function childrenToHtml(children) {
@@ -42,6 +44,17 @@ export default function (input) {
 
       visit(ast, 'heading', (n, i) => {
         headings.push({ node: n, index: i })
+      })
+
+      visit(ast, 'html', n => {
+        try {
+          const config = htmlMatter(n.value, {namespace: 'magi'})
+          if (config) {
+            Object.assign(meta, config)
+          }
+        } catch (err) {
+          throw new Error(err.message)
+        }
       })
 
       const heading1 = headings.filter(h => h.node.depth === 1)[0]

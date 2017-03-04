@@ -2506,6 +2506,12 @@ html-encoding-sniffer@^1.0.1:
   dependencies:
     whatwg-encoding "^1.0.1"
 
+html-matter@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/html-matter/-/html-matter-0.1.1.tgz#4139807066929a86f5399aa2fabe8e400abc2df3"
+  dependencies:
+    js-yaml "^3.8.2"
+
 html-void-elements@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/html-void-elements/-/html-void-elements-1.0.1.tgz#f929bea267a19e3535950502ca12c159f1b559af"
@@ -3156,9 +3162,9 @@ js-types@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/js-types/-/js-types-1.0.0.tgz#d242e6494ed572ad3c92809fc8bed7f7687cbf03"
 
-js-yaml@^3.4.3, js-yaml@^3.5.1, js-yaml@^3.7.0:
-  version "3.8.1"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.1.tgz#782ba50200be7b9e5a8537001b7804db3ad02628"
+js-yaml@^3.4.3, js-yaml@^3.5.1, js-yaml@^3.7.0, js-yaml@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.2.tgz#02d3e2c0f6beab20248d412c352203827d786721"
   dependencies:
     argparse "^1.0.7"
     esprima "^3.1.1"

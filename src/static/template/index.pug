@@ -9,6 +9,8 @@ html
     style
       include ../css/main.css
   body
+    if page.github
+      include ./github.pug
     section.banner
       .container
         .box

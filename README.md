@@ -1,3 +1,7 @@
+<!-- @magi
+github: egoist/magi
+-->
+
 # magi
 
 [![NPM version](https://img.shields.io/npm/v/magi.svg?style=flat-square)](https://npmjs.com/package/magi) [![NPM downloads](https://img.shields.io/npm/dm/magi.svg?style=flat-square)](https://npmjs.com/package/magi) [![Build Status](https://img.shields.io/circleci/project/egoist/magi/master.svg?style=flat-square)](https://circleci.com/gh/egoist/magi) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat-square)](https://github.com/egoist/donate)
@@ -39,6 +43,20 @@ Run `magi` in your terminal, open browser and you'll see:
 Here's another using [developit/unfetch](https://github.com/developit/unfetch) as example:
 
 ![p](https://ooo.0o0.ooo/2017/03/03/58b98d446a40d.png)
+
+## Recipes
+
+### Add a GitHub corner ribbon
+
+You can use [html-matter](https://github.com/egoist/html-matter) to set it anywhere in your markdown file, for example, at the top of it:
+
+```markdown
+<!-- @magi
+github: owner/repo
+-->
+```
+
+Notice that it should start with `@magi` so that we know we need to parse it, the rest part of it is simple [front-matter syntax used in Jekyll](https://jekyllrb.com/docs/frontmatter/).
 
 ## CLI
 

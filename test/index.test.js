@@ -1,6 +1,18 @@
 import magi from '../src/lib'
 
 test('main', async () => {
-  const result = await magi('# hello \n ## h2!')
-  expect(result.title).toBe('hello')
+  const result = await magi(`
+  # title
+
+  > desc
+
+<!-- @magi
+github: egoist/magi
+-->
+
+  ## sec title
+
+  `)
+  expect(result.title).toBe('title')
+  console.log(result)
 })

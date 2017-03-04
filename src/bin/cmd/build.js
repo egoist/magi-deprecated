@@ -7,6 +7,13 @@ export const command = 'build [file]'
 
 export const description = 'build markdown file to html'
 
+export const builder = {
+  out: {
+    description: 'Output file path',
+    alias: 'o'
+  }
+}
+
 export async function handler(argv) {
   try {
     const file = argv.file || 'README.md'
