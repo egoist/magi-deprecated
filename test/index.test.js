@@ -14,5 +14,4 @@ github: egoist/magi
 
   `)
   expect(result.title).toBe('title')
-  console.log(result)
 })

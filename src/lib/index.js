@@ -48,7 +48,7 @@ export default function (input) {
 
       visit(ast, 'html', n => {
         try {
-          const config = htmlMatter(n.value, {namespace: 'magi'})
+          const config = htmlMatter(n.value, { namespace: 'magi' })
           if (config) {
             Object.assign(meta, config)
           }
