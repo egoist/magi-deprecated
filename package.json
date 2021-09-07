@@ -80,7 +80,7 @@
     "prismjs": "^1.6.0",
     "pug": "^2.0.0-beta11",
     "remark": "^7.0.0",
-    "remark-html": "^6.0.0",
+    "remark-html": "^13.0.2",
     "remark-slug": "^4.2.2",
     "unist-builder": "^1.0.2",
     "unist-util-find-all-between": "^1.0.1",
